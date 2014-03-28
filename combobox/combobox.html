@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="combobox.js"></script>
+		<link href="combobox.css" type="text/css" rel="stylesheet" />
+		
+	</head>
+	
+	<body>
+ <select id="myselect">
+<option value=""></option>
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+</select>
+
+<input type="text" placeholder="Type the new option" id="newOption"/>
+<button id="addNew">Add</button>
+	
+	</body>
+	
+	<script type="text/javascript">
+
+		
+	$("select").minimalect();
+	
+	$("#addNew").on('click', function(){
+		//alert("clicked");
+		$("#myselect").prepend('<option value="foo">'+$("#newOption").val()+'</option>').val("foo").change();
+	});
+
+	</script>
+</html>
