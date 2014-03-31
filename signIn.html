@@ -3,16 +3,19 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<link href='http://fonts.googleapis.com/css?family=Bubbler+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Zeyada' rel='stylesheet' type='text/css'>
+
 
 </head>
 
 <style type="text/css">
 
 body {
-	font-family: 'Bubbler One', sans-serif;
+	font-family: 'Poiret One', cursive;
 }
 
 #container {
@@ -27,7 +30,7 @@ body {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	background-image: url('background-login-blur.jpg');
+	background-image: url('images/background-login-blur.jpg');
 }
 
 
@@ -35,6 +38,7 @@ h1 {
 	text-align: center;
 	margin-top: 100px;
 	font-size: 50px;
+	font-family: 'Zeyada', cursive;
 }
 
 #login-info {
@@ -65,6 +69,11 @@ background-color: #C3B6D4;
 font-weight: 800;
 font-size: 18px;
 }
+
+#sign-up {
+	background-color: #FFF7FC;
+	padding: 8px 50px;
+}
 </style>
 
 <body>
@@ -77,7 +86,8 @@ font-size: 18px;
 			<input type="text" placeholder="Username"><!--<i class="fa fa-user fa-2x"></i>--><br>
 			<input type="password" placeholder="Password">
 			<br>
-			<button type="button" class="btn btn-default" id="sign-in">Sign in</button>
+			<button type="button" class="btn btn-default" id="sign-in" onclick="location.href='home.html'">Sign in</button><br>
+			<button type="button" class="btn btn-default" id="sign-up">Sign up</button>
 
 		</div>
 
