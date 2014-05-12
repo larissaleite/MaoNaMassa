@@ -8,6 +8,7 @@
 <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Zeyada' rel='stylesheet' type='text/css'>
 <link href='js/combobox/combobox.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
@@ -32,7 +33,6 @@ body {
 }
 
 .buscar-btn, .desmarcar-btn {
-	text-align: center;
 	opacity: 0.85;
 	font-weight: 800;
 	font-size: 14px;
@@ -65,7 +65,7 @@ body {
 
 #receitas-buscar {
 	height: 80%;
-	text-align: center;
+	margin-left: 10%;
 }
 
 #buscar-receita {
@@ -123,25 +123,23 @@ label {
 
 .ingredients-checkbox {
 	text-align: left;
-	margin-left: 40%;
 }
 
 .minict_wrapper {
-width: 40%;
-font-size: 14px;
+	width: 50%;
+	font-size: 14px;
 	font-family: 'Poiret One', cursive;
-	margin-left: 31%;
 	margin-top: 15px;
 
 }
 
 .minict_wrapper input {
-font-size: 14px;
+	font-size: 14px;
 
 }
 
 .minict_wrapper ul li {
-font-size: 14px;
+	font-size: 14px;
 
 }
 </style>
@@ -174,7 +172,8 @@ font-size: 14px;
 				<label for="box3">Chocolate</label>
 			</div>
 
-			 <select id="myselect">
+			 <select data-placeholder="Choose a country..." style="width:350px;" multiple class="chosen-select">
+
 				<option value=""></option>
 				<option value="AL">Frango</option>
 				<option value="AK">Azeite</option>
@@ -185,10 +184,7 @@ font-size: 14px;
 				<option value="AR">Queijo Minas</option>
 				<option value="AR">Molho de tomate</option>
 				<option value="AR">Milho</option>
-
 			</select>
-			
-			<button class="btn btn-default desmarcar-btn"><i class="fa fa-square-o fa-fw"></i>Desmarcar tudo</button>
 			<br>
 			<button class="btn btn-default buscar-btn"><i class="fa fa-search fa-fw"></i>Buscar</button>
 
@@ -198,9 +194,13 @@ font-size: 14px;
 
 </body>
 		
-		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/combobox/combobox.js"></script>
-<script type="text/javascript">	$("select").minimalect();
+<script src="js/chosen.jquery.js"></script>
+<script type="text/javascript">	
+ $(".chosen-select").chosen({no_results_text: "Oops, nothing found!"}); 
+
+	//$("#myselect").minimalect({placeholder:"Outros ingredientes"});
 </script>
 
 

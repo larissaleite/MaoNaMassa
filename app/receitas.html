@@ -1,0 +1,286 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<!--<link rel="stylesheet" type="text/css" href="bootstrap-combined.no-icons.min.css">-->
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<style type="text/css">
+
+body {
+	font-family: 'Poiret One', cursive;
+}
+
+#container {
+	padding:50 300;
+}
+
+#home {
+	margin: 0 auto;
+	width:400px; 
+	height:600px;
+	border:1px solid #eee;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.btn {
+	text-align: center;
+	padding: 15px 50px;
+	opacity: 0.85;
+	background-color: #C3B6D4;
+	font-weight: 800;
+	font-size: 18px;
+}
+
+.navbar-nav>li{
+	padding: 15px 70px;
+	font-size: 20px;
+}
+
+.navbar-nav>li.active{
+	border-bottom: 5px solid #C3B6D4;
+}
+
+.navbar-nav>li:first-child{
+	border-right: 1px solid #e7e7e7;
+	margin-left: -31px;
+}
+
+#receitas-feed {
+	height: 80%;
+	overflow-y:scroll;
+	margin-top: -20px; 
+}
+
+#buscar-receita {
+	width: 35%;
+margin-left: -15px;
+ position: -webkit-sticky;  
+    top: 0;  
+    z-index: 1;  
+}
+
+.accordion {
+}
+
+.accordion-heading {
+	font-size: 16px;
+}
+
+.accordion-inner {
+	border-top: 1px solid #e5e5e5;
+}
+
+.accordion-group {
+margin-bottom: 2px;
+border: 1px solid #e5e5e5;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+.accordion-heading .accordion-toggle {
+display: block;
+padding: 8px 15px;
+}
+
+.list-group-item {
+height: 30%;
+border-top: 1px solid #C3B6D4;
+border-bottom: 1px solid #C3B6D4;
+}
+
+.list-item-img {
+	float: left;
+	margin-top: 11px;
+	margin-right: 15px;
+}
+
+.list-item-img>img {
+	width: 110px;
+}
+
+.list-item-text {
+	display:inline-block;
+
+}
+
+.list-item-text>h4, .list-item-text>p {
+	font-weight: 700;
+
+}
+
+.list-item-text>p {
+	margin-bottom: 0px;
+}
+</style>
+
+<body>
+
+<div id="container">
+	<div id="home">
+		<nav class="navbar navbar-default" role="navigation">
+		  <div class="container">
+		  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active">Receitas</li>
+					<li>Social</li>
+				</ul>	
+			</div>
+		  </div>
+		</nav>
+
+		<div id="receitas-feed">
+			<h3 style="text-align:center;">Receitas</h3>
+
+			<div class="accordion" id="accordion2">
+			  <div class="accordion-group">
+			    <div class="accordion-heading">
+			      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+			        Receitas somente com itens selecionados
+			      </a>
+			    </div>
+			    <div id="collapseOne" class="accordion-body collapse in">
+			      <div class="accordion-inner">
+			        			<div class="list-group">
+
+		    <a href="receita.html" class="list-group-item">
+		    	<div class="list-item-img">
+		      		<img src="http://www.istockphoto.com/file_thumbview_approve.php?size=1&id=20542047" />
+		      	</div>
+		      
+			    <div class="list-item-text">
+			    	<h4>Sanduíche Americano</h4>
+			      	<p>- Bagel</p>
+			      	<p>- Peito de peru</p>
+			      	<p>- Bacon</p>
+			    </div>
+		    </a>
+		    <a href="receita.html" class="list-group-item">
+				<div class="list-item-img">
+		      		<img src="http://www.adoropromocao.com.br/site/img_produtos/110_179878994_2311298577.jpg" />
+		      	</div>
+		      
+			    <div class="list-item-text">
+			    	<h4>Mini Pudim</h4>
+			      	<p>- Leite Condensado</p>
+			      	<p>- Leite</p>
+			      	<p>- Açucar</p>
+			    </div>    
+			</a>
+		    <a href="receita.html" class="list-group-item">
+		    	<div class="list-item-img">
+		      		<img src="http://www.pizzahut.de/typo3temp/pics/31cc6b288a.jpg" />
+		      	</div>
+		      
+			    <div class="list-item-text">
+			    	<h4>Salada de Frango</h4>
+			      	<p>- Frango</p>
+			      	<p>- Alface</p>
+			      	<p>- Croutton</p>
+			    </div>   
+		    </a>
+		    <a href="receita.html" class="list-group-item">
+		    	<div class="list-item-img">
+		      		<img src="http://st.depositphotos.com/1003814/2039/i/110/depositphotos_20399225-Bread-with-smoked-salmon-and-cream-cheese.jpg" />
+		      	</div>
+		      
+			    <div class="list-item-text">
+			    	<h4>Bruschetta de Salmão</h4>
+			      	<p>- Pão</p>
+			      	<p>- Salmão</p>
+			      	<p>- Cream Cheese</p>
+			    </div>   
+		    </a>
+		  </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="accordion-group">
+			    <div class="accordion-heading">
+			      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+			        Outras receitas
+			      </a>
+			    </div>
+			    <div id="collapseTwo" class="accordion-body collapse">
+			      <div class="accordion-inner">
+			        	<div class="list-group">
+
+		    <a href="receita.html" class="list-group-item">
+		    	<div class="list-item-img">
+		      		<img src="http://www.istockphoto.com/file_thumbview_approve.php?size=1&id=20542047" />
+		      	</div>
+		      
+			    <div class="list-item-text">
+			    	<h4>Sanduíche Americano</h4>
+			      	<p>- Bagel</p>
+			      	<p>- Peito de peru</p>
+			      	<p>- Bacon</p>
+			    </div>
+		    </a>
+		    <a href="receita.html" class="list-group-item">
+				<div class="list-item-img">
+		      		<img src="http://www.adoropromocao.com.br/site/img_produtos/110_179878994_2311298577.jpg" />
+		      	</div>
+		      
+			    <div class="list-item-text">
+			    	<h4>Mini Pudim</h4>
+			      	<p>- Leite Condensado</p>
+			      	<p>- Leite</p>
+			      	<p>- Açucar</p>
+			    </div>    
+			</a>
+		    <a href="receita.html" class="list-group-item">
+		    	<div class="list-item-img">
+		      		<img src="http://www.pizzahut.de/typo3temp/pics/31cc6b288a.jpg" />
+		      	</div>
+		      
+			    <div class="list-item-text">
+			    	<h4>Salada de Frango</h4>
+			      	<p>- Frango</p>
+			      	<p>- Alface</p>
+			      	<p>- Croutton</p>
+			    </div>   
+		    </a>
+		    <a href="receita.html" class="list-group-item">
+		    	<div class="list-item-img">
+		      		<img src="http://st.depositphotos.com/1003814/2039/i/110/depositphotos_20399225-Bread-with-smoked-salmon-and-cream-cheese.jpg" />
+		      	</div>
+		      
+			    <div class="list-item-text">
+			    	<h4>Bruschetta de Salmão</h4>
+			      	<p>- Pão</p>
+			      	<p>- Salmão</p>
+			      	<p>- Cream Cheese</p>
+			    </div>   
+		    </a>
+		  </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+		
+		<footer>
+			<div class="container">
+				<button class="btn btn-default" id="buscar-receita" onclick="location.href='select2-3.4.8/buscar.html'"><i class="fa fa-arrow-left fa-fw"></i> Voltar</button>
+			</div>
+		</footer>
+	</div>	
+</div>	
+
+</body>
+
+</html>
