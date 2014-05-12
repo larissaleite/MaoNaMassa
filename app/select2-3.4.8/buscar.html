@@ -1,0 +1,164 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Zeyada' rel='stylesheet' type='text/css'>
+<link href='js/combobox/combobox.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+ <link href="select2.css" rel="stylesheet"/>
+    <script src="select2.js"></script>
+
+</head>
+
+<style type="text/css">
+
+body {
+	font-family: 'Poiret One', cursive;
+}
+
+#container {
+	padding:50 300;
+}
+
+#home {
+	margin: 0 auto;
+	width:400px; 
+	height:600px;
+	border:1px solid #eee;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.buscar-btn {
+		background-color: #C3B6D4;
+}
+
+.desmarcar-btn {
+	background-color: #FFAEAE;
+}
+
+.navbar-nav>li{
+	padding: 15px 70px;
+	font-size: 20px;
+}
+
+.navbar-nav>li.active{
+	border-bottom: 5px solid #C3B6D4;
+}
+
+.navbar-nav>li:first-child{
+	border-right: 1px solid #e7e7e7;
+	margin-left: -31px;
+}
+
+#receitas-buscar {
+	height: 80%;
+}
+
+#receitas-buscar > h3, #receitas-buscar > h4 {
+	margin-left: 10%;
+}
+
+.buscar-btn, .desmarcar-btn {
+	opacity: 0.85;
+	font-weight: 800;
+	font-size: 14px;
+	width: 100%;
+	padding: 5%;
+	margin-top: 50%;
+	margin-left: 0px;
+}
+
+.select2-container {
+	width: 80%;
+	margin-bottom: 5%;
+		margin-left: 10%;
+
+}
+
+.select2-container-multi .select2-choices {
+	min-height: 15%;
+}
+
+</style>
+
+<script type="text/javascript">
+  $(document).ready(function() { 
+  	$("#select2-ingredientes").select2({
+  		placeholder: "Digite os ingredientes"
+  	}); 
+
+  	$("#select2-categorias").select2({
+  		placeholder: "Categorias"
+  	});
+  });
+
+</script>
+<body>
+
+<div id="container">
+	<div id="home">
+		<nav class="navbar navbar-default" role="navigation">
+		  <div class="container">
+		  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active">Receitas</li>
+					<li>Social</li>
+				</ul>	
+			</div>
+		  </div>
+		</nav>
+
+		<div id="receitas-buscar">
+			<h3>Buscar receitas</h3>
+
+			 <select id="select2-ingredientes" multiple>
+
+				<option value=""></option>
+				<option value="AL">Frango</option>
+				<option value="AK">Azeite</option>
+				<option value="AZ">Farinha de Trigo</option>
+				<option value="AR">Goma</option>
+				<option value="AR">Salmão</option>
+				<option value="AR">Pão</option>
+				<option value="AR">Queijo Minas</option>
+				<option value="AR">Molho de tomate</option>
+				<option value="AR">Milho</option>
+			</select>
+
+			<h4>Categorias</h4>
+
+			<select id="select2-categorias" multiple>
+
+				<option value=""></option>
+				<option value="AL">Sobremesa</option>
+				<option value="AK">Doce</option>
+				<option value="AZ">Lanche</option>
+				<option value="AR">Fitness</option>
+				<option value="AR">Salada</option>
+				<option value="AR">Carnes</option>
+				<option value="AR">Petiscos</option>
+				<option value="AR">Frutos do mar</option>
+				<option value="AR">Vegetariana</option>
+				<option value="AR">Lactose-free</option>
+				<option value="AR">Gluten-free</option>
+
+			</select>
+
+			<br>
+			<button class="btn btn-default buscar-btn"><i class="fa fa-search fa-fw"></i>Buscar</button>
+
+		</div>
+	</div>	
+</div>	
+
+</body>
+
+</html>
